@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <link rel="icon" href="/imgs/logo2.png" type="image/icon type">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Kaushan+Script&family=Monoton&family=PT+Serif&family=Protest+Revolution&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main id="main">
+        <!-- <div id="back2home"><a href="/index.html"><i class="ri-arrow-left-s-line"></i></a></div> -->
+        <nav><a href="/frontend.html">FrontEnd Dev</a><a href="/index.html">Home</a></nav>
+
+        <div id="contact">
+            <form action="" id="form">
+                <label for="" class="elm">Email :</label>
+                <input type="email" class="elm" placeholder="Enter your Email" class="inputField" >
+                <label for="" class="elm">Company:</label>
+                <input type="text" class="elm" placeholder="Your Company Name" class="inputField">
+                <label for="address" class="elm">Address:</label>
+                <input type="text" class="elm" placeholder="Your Company Address" class="inputField" >
+                <br>
+                <input type="submit" id="submit" class="elm">
+            </form>
+            <p id="message">_</p>
+        </div>
+
+
+
+
+
+        <div id="footer">
+            <a href="https://www.linkedin.com/in/devprodigy/"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/Devprodigyy"><i class="ri-github-fill"></i></a>
+            <a href="https://www.instagram.com/devprodigy__/"><i class="ri-instagram-fill"></i></a>
+            <a href="https://youtube.com/@dev_prodigy?si=HTOe8Z9dS0gb8lt2"><i class="ri-youtube-fill"></i></a>
+            <!-- <a href="https://mail.google.com/" id="mail"><i class="ri-mail-send-line"></i></a> -->
+            <a href="">
+                <h5>kunalwatulkar1@gmail.com</h6>
+            </a>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script.js"></script>
+</body>
+<script>
+    gsap.from("#contact .elm",{
+ // key, value, pair like css,
+ y: -100,
+    duration:0.5,
+    delay:0,
+    stagger:1,
+    opacity:0,
+    yoyo:true,
+    });
+
+// var form=document.getElementById("form");
+// var message=document.getElementById("message");
+// var submit=document.getElementById("submit");
+
+// submit.addEventListener("click",function(){
+//     message.textContent = "Please fill the form";
+// })
+
+
+</script>
+
+</html>
+
+
